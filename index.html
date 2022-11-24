@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <aside>
+    <aside id="user-info">
+        
         <div id="user-card">
+            <p id="close"><bold>X</bold></p>
             <img src="img/joão_pedro_noberto.png" alt="">
             <div id="username">
                 <h1>João Pedro Noberto</h1>
@@ -54,14 +56,14 @@
 
         <div id="techs-card">
             <h2>Tecnologias</h2>
-            <div id="techs">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JAVASCRIPT</p>
-                <p>C</p>
-                <p>JAVA</p>
-                <p>GIT</p>
-                <p>GITHUB</p>
+            <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>C</li>
+                <li>JAVA</li>
+                <li>GIT</li>
+                <li>GITHUB</li>
             </div>
         </div>
 
@@ -94,9 +96,14 @@
             
     </aside>
     <main>
-        <div class="title-card">
-            <h2>My Projects</h2>
-            <a href="" class="remove-decoration"><p>Veja todos</p></a>
+        <div id="header">
+            <div id="menu-icon">
+                <img src="assets/Menu.svg" alt="">
+            </div>
+            <div class="title-card">
+                <h2>My Projects</h2>
+                <a href="" class="remove-decoration"><p>Veja todos</p></a>
+            </div>
         </div>
 
         <div id="projects">
@@ -139,18 +146,22 @@
         <div id="posts">
             <a href="" class="remove-decoration">
                 <div class="post-card">
-                    <img src="img/joão_pedro_noberto.png" alt="">
+                    <div class="post-img">
+                        <img src="img/joão_pedro_noberto.png" alt="">
+                    </div>
                     <div id="post-info">
                         <div>
                             <h2>Jorta Bunker</h2>
                             <p class="small-text-justified">5 meses atrás</p>
                         </div>
                         <p class="description">portfólio/hub de projetos pessoais de estudo de html, css e javascript.</p>
-                        <div class="small-text-justified">
-                            <p>#html</p>
-                            <p>#css</p>
-                            <p>#estudos</p>
-                            <p>#praticando</p>
+                        <div class="info-tags">
+                            <ul class="tags">
+                                <li>#html</li>
+                                <li>#css</li>
+                                <li>#estudos</li>
+                                <li>#praticando</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -158,6 +169,6 @@
         </div>
 
     </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
